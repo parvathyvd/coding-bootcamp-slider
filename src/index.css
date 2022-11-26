@@ -109,6 +109,7 @@ html {
     background-image: url("../public/images/pattern-curve.svg");
     background-repeat: no-repeat;
     background-position: bottom left;
+      position: relative;
   }
   .person {
     display: flex;
@@ -133,8 +134,8 @@ html {
   }
 
   .blurb {
-    top: 62vh;
-    right: 20%;
+    top: 31vh;
+    right: 17%;
     left: auto;
   }
   .person-detail {
@@ -144,8 +145,8 @@ html {
   }
   .blockquote {
     position: absolute;
-    top: 39vh;
-    left: 21%;
+    top: 30%;
+    left: 15%;
     width: 12rem;
   }
   #root {
