@@ -134,7 +134,8 @@ html {
   }
 
   .blurb {
-    top: 31vh;
+    position: absolute;
+    top: 28vh;
     right: 17%;
     left: auto;
   }
