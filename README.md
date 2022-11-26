@@ -1,6 +1,7 @@
 # Frontend Mentor - Coding bootcamp testimonials slider
 
-![Design preview for the Coding bootcamp testimonials slider coding challenge](./design/desktop-preview.jpg)
+#Design Preview
+https://www.frontendmentor.io/challenges/coding-bootcamp-testimonials-slider-4FNyLA8JL
 
 ## The challenge
 
@@ -15,7 +16,7 @@ Your users should be able to:
 
 Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
 
-##My Solution
+##My Solution - Used HTML,CSS, React
 ##Link
 https://coding-bootcamp-slider-react.netlify.app/
 
