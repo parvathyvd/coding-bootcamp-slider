@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+
+/***Global reset******/
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Dark-Blue: hsl(240, 38%, 20%);
+  --Grayish-Blue: hsl(240, 18%, 77%);
+}
+
+html {
+  font-family: "Inter", sans-serif;
+  max-width: 140rem;
+  font-size: 62.5%;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  margin: 3rem auto 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../public/images/pattern-curve.svg");
+  background-repeat: no-repeat;
+  background-position: 0% 107%;
+  padding-bottom: 6rem;
+}
+/***Slider******/
+
+.slider {
+  max-width: 140rem;
+  margin: 3rem auto;
+}
+.person {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+.personImg-wrapper {
+  background: url(../public/images/pattern-bg.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  max-width: 100vw;
+  padding: 4rem 2rem;
+  margin: 1rem;
+}
+.person-image {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+}
+.blockquote img {
+  width: 7rem;
+}
+.testimonial {
+  font-size: 1.7rem;
+  color: var(Dark-Blue);
+  font-weight: 300;
+  padding: 2rem 0;
+  line-height: 2.5rem;
+  text-align: center;
+  transform: translateY(-7rem);
+  width: 80%;
+}
+.testimonial h3 {
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+.testimonial h4 {
+  color: var(--Grayish-Blue);
+}
+.person-detail {
+  padding-top: 2rem;
+}
+
+.blurb {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  background: #fff;
+  display: flex;
+  width: 8rem;
+  padding: 1rem;
+  justify-content: space-around;
+  transform: translateX(-4.5rem);
+  border-radius: 2rem;
+}
+.blurb img {
+  width: 1rem;
+  cursor: pointer;
+}
+
+/***Media query for large devices (min: 1000px)******/
+
+@media screen and (min-width: 1000px) {
+  .slider {
+    background-image: url("../public/images/pattern-curve.svg");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+  }
+  .person {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 1rem 2rem 3rem rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+  }
+  .person img {
+    width: 85%;
+  }
+  .personImg-wrapper {
+    order: 2;
+  }
+  .testimonial {
+    text-align: center;
+    transform: translateX(15%);
+    text-align: left;
+    padding-left: 3rem;
+  }
+  .testimonial::after {
+    transform: translate(-20rem, 13rem) scale(1.15);
+  }
+
+  .blurb {
+    top: 62vh;
+    right: 20%;
+    left: auto;
+  }
+  .person-detail {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .blockquote {
+    position: absolute;
+    top: 39vh;
+    left: 21%;
+    width: 12rem;
+  }
+  #root {
+    background: none;
+  }
+}
