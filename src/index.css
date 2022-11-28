@@ -109,7 +109,9 @@ html {
     background-image: url("../public/images/pattern-curve.svg");
     background-repeat: no-repeat;
     background-position: bottom left;
-      position: relative;
+  }
+  #root{
+  position: relative;
   }
   .person {
     display: flex;
@@ -135,8 +137,8 @@ html {
 
   .blurb {
     position: absolute;
-    top: 28vh;
-    right: 17%;
+    top: 60vh;
+    right: 20%;
     left: auto;
   }
   .person-detail {
